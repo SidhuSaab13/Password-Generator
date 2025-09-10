@@ -1,0 +1,16 @@
+# INFO-B 211 — Assignment 2: Standard Modules
+
+Generates two kinds of passwords using only Python’s standard library and logs each with a timestamp.
+
+- **Memorable:** picks `n` nouns, applies case, adds one digit to each, joins with `-`.
+  - Log: `Memorable/Generated_Passwords.txt`
+- **Random:** picks `length` characters from letters/digits (and punctuation if allowed).
+  - Log: `Random/Generated_Passwords.txt`
+
+## Run
+python3 password_generator.py memorable --n_words 3 --case title
+python3 password_generator.py random --length 20 --no_punct --forbidden "O0Il|"
+python3 password_generator.py stress
+
+## Standard modules used
+pathlib, datetime, random, secrets, string, argparse, typing
